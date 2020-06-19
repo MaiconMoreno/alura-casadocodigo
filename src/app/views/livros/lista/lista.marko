@@ -13,16 +13,16 @@
                 <td>Editar</td>
                 <td>Remover</td>
             </tr>
-            <tr id="livro_${livro.id}" for (livro in data.livros)> 
+            <tr id="livro_${livro.id}" for (livro in data.livros)>
                 <td>${livro.id}</td>
                 <td>${livro.titulo}</td>
                 <td>${livro.preco}</td>
-                <td><a href="#">Editar</a></td> 
-                <td><a href="#" data-ref="${livro.id}" data-type="remocao">Remover</a></td> 
+                <td><a href="/livros/form/${livro.id}">Editar</a></td>
+                <td><a href="#" data-ref="${livro.id}" data-type="remocao">Remover</a></td>
             </tr>
-        </table> 
+        </table>
 
         <script src="/estatico/js/remove-livro.js">
-        </script> 
-    </body> 
+        </script>
+    </body>
 </html>
